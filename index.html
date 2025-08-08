@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TODO list</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>TODO list</h1>
-    <h2>Items</h2>
-    <div id="items"></div>
-    <input id="itemInput" type="text" placeholder="Add item">
-    <button onclick="addItem()">Add item</button>
+    <div class="container">
+        <h1>TODO List</h1>
+        <h2>items</h2>
+        <div class="input-section">
+        <input type="text" id="itemInput" placeholder="Add item">
+        <button onclick="addItem()" >Add Item</button>
+        </div>
+        <div id="items"></div>
+    <div class="counter">
+      <p id="counter">Total tasks: 0</p>
+    </div>
+
+        </div>
     <script src="index.js"></script>
 </body>
 </html>
